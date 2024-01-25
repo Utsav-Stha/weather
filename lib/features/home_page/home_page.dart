@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/widgets/custom_search_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,23 +21,10 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(14.0),
+          padding: const EdgeInsets.fromLTRB(12.0, 6.0, 12.0, 6.0),
           child: Column(
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    flex: 9,
-                    child: TextField(),
-                  ),
-                  Expanded(
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(Icons.search),
-                    ),
-                  ),
-                ],
-              ),
+              CustomSearchbar(),
               const SizedBox(
                 height: 20.0,
               ),
