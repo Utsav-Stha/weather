@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/config/network_request/network_request.dart';
 
 class CustomSearchbar extends StatelessWidget {
   const CustomSearchbar({super.key});
@@ -23,7 +24,9 @@ class CustomSearchbar extends StatelessWidget {
         ),
         Expanded(
           child: IconButton(
-            onPressed: () {},
+            onPressed: () async{
+              await NetworkRequest.getWeatherData();
+            },
             icon: const Icon(Icons.search),
           ),
         ),
