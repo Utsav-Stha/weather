@@ -18,14 +18,13 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
     return Consumer<WeatherProvider>(
       builder: (context, model, child) => SearchBar(
         controller: widget.cityController,
+        leading: const Icon(Icons.place_outlined),
         trailing: <Widget>[
           IconButton(
             onPressed: () {
-
               model.updateCityName(widget.cityController.text);
               log(NetworkRequest.location);
               widget.cityController.clear();
-
             },
             icon: const Icon(Icons.search),
           )

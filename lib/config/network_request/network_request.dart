@@ -16,6 +16,7 @@ class NetworkRequest {
     String networkUrl = "$baseUrl?q=$location&APPID=$apiKey&units=metric";
     Response<dynamic> response = await dio.get(networkUrl);
     Map<String, dynamic> data = jsonDecode('$response');
+
     return WeatherModel.fromJson(data);
   }
   static Future<WeatherModel> getData() async {
