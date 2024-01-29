@@ -13,7 +13,7 @@ class AdditionalData extends StatelessWidget {
         Text(
           title ?? '',
           style: const TextStyle(
-            fontSize: 20.0,
+            fontSize: 16.0,
             color: Colors.white,
             fontWeight: FontWeight.w700,
             letterSpacing: 1.2,
@@ -22,7 +22,7 @@ class AdditionalData extends StatelessWidget {
         Text(
           data ?? '',
           style: const TextStyle(
-            fontSize: 20.0,
+            fontSize: 16.0,
             color: Colors.white,
             fontWeight: FontWeight.w700,
             letterSpacing: 1.2,

@@ -14,46 +14,46 @@ class BodyUI extends StatelessWidget {
         Text(
           data?.name ?? '',
           style: const TextStyle(
-            fontSize: 40.0,
+            fontSize: 36.0,
             color: Colors.white,
             fontWeight: FontWeight.w500,
             letterSpacing: 2.0,
           ),
         ),
         const SizedBox(
-          height: 20.0,
+          height: 14.0,
         ),
         CircleAvatar(
-          radius: 90.0,
+          radius: 60.0,
           backgroundColor: const Color.fromRGBO(0, 210, 189, 0.7),
           child: Image.network(
               "http://openweathermap.org/img/wn/${data?.img}@4x.png"),
         ),
         const SizedBox(
-          height: 20.0,
+          height: 14.0,
         ),
         Text(
           data?.main ?? '',
           style: const TextStyle(
-            fontSize: 30.0,
+            fontSize: 26.0,
             color: Colors.white,
             fontWeight: FontWeight.w500,
             letterSpacing: 2.0,
           ),
         ),
         const SizedBox(
-          height: 10.0,
+          height: 2.0,
         ),
         Text(
           '${data?.temp}°C',
           style: const TextStyle(
-            fontSize: 58.0,
+            fontSize: 48.0,
             color: Colors.white,
             fontWeight: FontWeight.w100,
           ),
         ),
         Text(
-          data?.desc ?? '',
+          'Description : ${data?.desc}',
           style: const TextStyle(
             fontSize: 16.0,
             color: Colors.white,
@@ -62,7 +62,7 @@ class BodyUI extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 40.0,
+          height: 34.0,
         ),
         AddiotionalInfoCard(
           data: data,

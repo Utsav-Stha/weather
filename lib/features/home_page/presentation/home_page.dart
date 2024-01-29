@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 CustomSearchBar(cityController: cityController),
                 const SizedBox(
-                  height: 20.0,
+                  height: 14.0,
                 ),
                 Consumer<WeatherProvider>(
                   builder: (context, model, child) => FutureBuilder(

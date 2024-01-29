@@ -9,6 +9,7 @@ class AddiotionalInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       decoration: BoxDecoration(
         boxShadow: const [
           BoxShadow(
@@ -27,7 +28,7 @@ class AddiotionalInfoCard extends StatelessWidget {
         color: const Color.fromRGBO(0, 172, 155, 1.0),
         borderRadius: BorderRadius.circular(20.0),
       ),
-      height: MediaQuery.of(context).size.width * 0.6,
+      height: MediaQuery.of(context).size.width * 0.5,
       width: MediaQuery.of(context).size.width * 0.9,
       padding: const EdgeInsets.all(12.0),
       child: Column(
@@ -35,30 +36,30 @@ class AddiotionalInfoCard extends StatelessWidget {
           const Text(
             'Additional Information',
             style: TextStyle(
-              fontSize: 22.0,
+              fontSize: 16.0,
               color: Colors.white,
               fontWeight: FontWeight.w700,
               letterSpacing: 1.2,
             ),
           ),
           const SizedBox(
-            height: 10.0,
+            height: 6.0,
           ),
           const Divider(
             color: Colors.white,
           ),
           const SizedBox(
-            height: 10.0,
+            height: 6.0,
           ),
           Column(
             children: [
               AdditionalData(data: '${data?.humidity}%', title: 'Humidity'),
               const SizedBox(
-                height: 16.0,
+                height: 12.0,
               ),
               AdditionalData(data: '${data?.pressure}', title: 'Pressure'),
               const SizedBox(
-                height: 16.0,
+                height: 12.0,
               ),
               AdditionalData(
                   data: '${data?.windSpeed}km/hr', title: 'Wind Speed'),
