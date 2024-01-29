@@ -1,16 +1,13 @@
 # weather
 
-A new Flutter project.
+#Screenshot
 
-## Getting Started
+<img src = "https://github.com/Utsav-Stha/weather/assets/140294538/5a5487f3-170d-4eb3-a8cf-5f6338774414" width="300" height="600" style="padding-right:150;">
 
-This project is a starting point for a Flutter application.
+<img src = "https://github.com/Utsav-Stha/weather/assets/140294538/4bc3c2c0-5613-4db3-844b-6daa3bbc1d52" width="300" height="600">
 
-A few resources to get you started if this is your first Flutter project:
+##Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/Utsav-Stha/weather/assets/140294538/124fc8c3-3eb8-4c50-820f-9dcc5ab2943f
+
